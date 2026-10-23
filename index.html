@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Recommendation Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>Find Your Course</h1>
+      <p class="sub">Answer 6 quick questions and get course suggestions that fit your goals.</p>
+    </header>
+
+    <section id="quiz" aria-live="polite">
+      <div class="progress"><div id="bar"></div></div>
+      <p id="step" class="step"></p>
+      <h2 id="question"></h2>
+      <div id="options" class="options"></div>
+      <div class="nav">
+        <button id="back" class="ghost">Back</button>
+        <button id="next" class="primary" disabled>Next</button>
+      </div>
+    </section>
+
+    <section id="result" hidden>
+      <h2>Your top matches</h2>
+      <div id="cards"></div>
+      <div class="nav">
+        <button id="restart" class="ghost">Retake quiz</button>
+        <button id="copy" class="primary">Copy summary</button>
+      </div>
+      <p id="copied" class="note" hidden>Summary copied.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
